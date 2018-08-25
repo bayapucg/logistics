@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Logistics</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- DataTables -->
+  
+  <link rel="stylesheet" href="dist/css/logist.css">
+ <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" href="dist/css/color.css">
+  <!-- jQuery 2.2.3 -->
+<script src="dist/js/jquery.js"></script>
+<script src="dist/js/bootstrapValidator.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/app.min.js"></script>
+
+
+</head>
+
+<body class="hold-transition skin-blue fixed sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>L</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Logistics</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <!-- Tasks: style can be found in dropdown.less -->
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 9 tasks</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">View all tasks</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Alexander Pierce</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+    
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="treeview">
+          <a href="index.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              
+            </span>
+          </a>
+         
+        </li> 
+		 
+		  <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Customers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+         <li><a href="add-customer.html"><i class="fa fa-circle-o"></i> Add Customer</a></li>
+            <li><a href="customer-list.html"><i class="fa fa-circle-o"></i> Customer List</a></li>
+          </ul>
+        </li>
+		
+       
+       
+       
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- =============================================== -->
+  <div class="content-wrapper">
+   <section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Customer Information</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+			<div style="padding:20px;">
+            <form id="defaultForm" method="post" class="" >
+							<div class="col-md-6">
+							<div class="form-group">
+								<label class=" control-label">Company</label>
+								<div class="">
+									<input type="text" class="form-control" name="username" placeholder="Enter Company Name" />
+								</div>
+							</div>
+                        </div>
+						<!--<div class="col-md-6">
+							 <div class="form-group">
+							<label>Dropdown </label>
+							<select class="form-control " style="width: 100%;">
+							  <option selected="selected">Alabama</option>
+							  <option>Alaska</option>
+							  <option>California</option>
+							  <option>Delaware</option>
+							  <option>Tennessee</option>
+							  <option>Texas</option>
+							  <option>Washington</option>
+							</select>
+						  </div>
+                        </div>-->
+					
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class=" control-label">Email</label>
+								<div class="">
+									<input type="mail" class="form-control" name="username" placeholder="Enter Email Id" />
+								</div>
+							</div>
+                        </div>
+						<div class="col-md-6">
+							<div class="row">
+							<div class="col-md-2">
+								<div class="form-group">
+									<label class=" control-label">title</label>
+									<div class="">
+										<input type="text" class="form-control" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class=" control-label">First Name</label>
+									<div class="">
+										<input type="text" class="form-control" name="username"  />
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-3">
+								<div class="form-group">
+									<label class=" control-label">Last Name</label>
+									<div class="">
+										<input type="text" class="form-control" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="form-group">
+									<label class=" control-label">Suffix</label>
+									<div class="">
+										<input type="text" class="form-control" name="username" placeholder="Name of the teacher" />
+									</div>
+								</div>
+							</div>
+                        </div>
+                        </div>
+						<div class="col-md-6">
+							<div class="row">
+							
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class=" control-label">Phone</label>
+									<div class="">
+										<input type="text" class="form-control" name="username"  />
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class=" control-label">Mobile</label>
+									<div class="">
+										<input type="text" class="form-control" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="form-group">
+									<label class=" control-label">Fax</label>
+									<div class="">
+										<input type="text" class="form-control" name="username" />
+									</div>
+								</div>
+							</div>
+							
+                        </div>
+                        </div>
+						<div class="col-md-6">
+							 <div class="form-group">
+							<label>Display Name as</label>
+							<select class="form-control select2" style="width: 100%;">
+							  <option selected="selected">Type1</option>
+							  <option>Alaska</option>
+							  <option>California</option>
+							  <option>Delaware</option>
+							  <option>Tennessee</option>
+							  <option>Texas</option>
+							  <option>Washington</option>
+							</select>
+						  </div>
+                        </div>
+						<div class="col-md-6">
+							<div class="row">
+							
+							<div class="col-md-5">
+								<div class="form-group">
+									<label class=" control-label">Other</label>
+									<div class="">
+										<input type="text" class="form-control" name="username"  />
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-7">
+								<div class="form-group">
+									<label class=" control-label">Website</label>
+									<div class="">
+										<input type="text" class="form-control" name="username" />
+									</div>
+								</div>
+							</div>
+						
+							
+                        </div>
+                        </div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label  class=" control-label">Print on Check as <span style="margin-left:10px;margin-right:10px"> <input  type="checkbox" /></span> Use Display Name</label>
+								<div class="">
+									<input type="text" class="form-control" name="username" disabled  />
+								</div>
+							</div>
+                        </div>
+						<div class="col-md-6">
+							<div class="row">
+							
+									<div class="col-md-6">
+									<label  class=" control-label"> <span style="margin-left:10px;margin-right:10px"> <input  type="checkbox" /></span> Use Display Name</label>
+									<div class="form-group">
+										
+										
+							<select class="form-control select2" style="width: 100%;" disabled>
+							  <option selected="selected">Enter Parent Customer</option>
+							  <option>Alaska</option>
+							  <option>California</option>
+							  <option>Delaware</option>
+							  <option>Tennessee</option>
+							  <option>Texas</option>
+							  <option>Washington</option>
+							</select>
+									
+										
+									</div>
+									</div>
+									<div class="col-md-6">
+									<label  class=" control-label"> &nbsp;</label>
+									<div class="form-group">
+										
+									
+										<select class="form-control select2" style="width: 100%;" disabled>
+							  <option selected="selected">Bill With Parent</option>
+							  <option>Alaska</option>
+							  <option>California</option>
+							  <option>Delaware</option>
+							  <option>Tennessee</option>
+							  <option>Texas</option>
+							  <option>Washington</option>
+							</select>
+										
+									</div>
+									</div>
+								</div>
+                        </div>
+						 <div class="col-md-12">
+			<div class="">
+          <!-- Custom Tabs -->
+          <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="false">Address</a></li>
+              <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">Notes</a></li>
+              <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="true">Tax Info</a></li>
+			    <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="true">Payment & Billing</a></li>
+				  <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="true">Setup</a></li>
+				    <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="true">Attachments</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab_1">
+			  <div class="clearfix">&nbsp;</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class=" control-label">Billing Address</label>
+								<div class="">
+									<textarea class="form-control" rows="3" id="comment"></textarea>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<div class="">
+										<input type="text" class="form-control" placeholder="City / Town" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<div class="">
+										<input type="text" class="form-control"  placeholder="State" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<div class="">
+										<input type="text" class="form-control"  placeholder="Zipcode" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<div class="">
+										<input type="text" class="form-control"  placeholder="Country" name="username" />
+									</div>
+								</div>
+							</div>
+                        </div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class=" control-label">Shipping Address <span style="margin-left:10px;margin-right:10px"> <input  type="checkbox" /></span> Same as Billing Address</label>
+								<div class="">
+									<textarea class="form-control" rows="3" id="comment"></textarea>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<div class="">
+										<input type="text" class="form-control" placeholder="City / Town" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<div class="">
+										<input type="text" class="form-control"  placeholder="State" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<div class="">
+										<input type="text" class="form-control"  placeholder="Zipcode" name="username" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<div class="">
+										<input type="text" class="form-control"  placeholder="Country" name="username" />
+									</div>
+								</div>
+							</div>
+                        </div>
+					</div>
+				</div>
+             
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="tab_2">
+				<p>Testing 1</p>
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane " id="tab_3">
+               <p>Testing 2</p>
+              </div>
+              <!-- /.tab-pane -->
+            </div>
+            <!-- /.tab-content -->
+          </div>
+          <!-- nav-tabs-custom -->
+        </div>
+      
+						
+					
+						<div class="clearfix">&nbsp;</div>
+						  <div class="form-group">
+                            <div class="col-lg-4">
+                                <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Cancel</button>
+                            </div> 
+							<div class="col-lg-4">
+                                &nbsp;
+                            </div>
+							<div class="col-lg-4">
+                                <button type="submit" class="btn btn-primary pull-right" name="signup" value="Sign up">Save Address</button>
+                            </div>
+                        </div>
+						
+                    </form>
+					
+          </div>
+		  <div class="clearfix">&nbsp;</div>
+          </div>
+          <!-- /.box -->
+
+         <div class="clearfix">&nbsp;</div>
+
+        </div>
+		
+      
+        </div>
+		
+      
+      <!-- /.row -->
+    </section> 
+	
+</div>
+ <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+     
+    </div>
+    <strong>Copyright &copy; 2018 <a href="#">Logistics</a>.</strong> All rights
+    reserved.
+  </footer>
+
+
+  <div class="control-sidebar-bg"></div>
+</div>
+
+<!-- AdminLTE App -->
+
+
+
+</body>
+</html>

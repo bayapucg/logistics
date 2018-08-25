@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Logistics</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- DataTables -->
+  
+  <link rel="stylesheet" href="dist/css/logist.css">
+ <link rel="stylesheet" href="dist/css/style.css">
+  <link rel="stylesheet" href="dist/css/color.css">
+  <!-- jQuery 2.2.3 -->
+<script src="dist/js/jquery.js"></script>
+<script src="dist/js/bootstrapValidator.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/js/app.min.js"></script>
+
+
+</head>
+
+<body class="hold-transition skin-blue fixed sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>L</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Logistics</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 4 messages</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Support Team
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Why not buy a new awesome theme?</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                </ul>
+              </li>
+              <li class="footer"><a href="#">See All Messages</a></li>
+            </ul>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 10 notifications</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">View all</a></li>
+            </ul>
+          </li>
+          <!-- Tasks: style can be found in dropdown.less -->
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">You have 9 tasks</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        Design some buttons
+                        <small class="pull-right">20%</small>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">20% Complete</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">View all tasks</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Alexander Pierce</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Sales</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">Friends</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Alexander Pierce</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        </div>
+      </div>
+    
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+        <li class="treeview">
+          <a href="index.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+            <span class="pull-right-container">
+              
+            </span>
+          </a>
+         
+        </li> 
+		 
+		  <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Customers</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+         <li><a href="add-customer.html"><i class="fa fa-circle-o"></i> Add Customer</a></li>
+            <li><a href="customer-list.html"><i class="fa fa-circle-o"></i> Customer List</a></li>
+          </ul>
+        </li>
+		
+       
+       
+       
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- =============================================== -->
+  <div class="content-wrapper">
+   <section class="content">
+      <div class="row">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- general form elements -->
+          <div class="box box-primary">
+            <div class="box-header with-border">
+              <h3 class="box-title">Book</h3>
+            </div>
+            <!-- /.box-header -->
+            <!-- form start -->
+			<div style="padding:20px;">
+            <form id="defaultForm" method="post" class="" >
+			
+							<div class="row">
+							<div class="col-md-6">
+								<div class="box1 " >
+									
+									<br>
+									<div class="form-group">
+										<label class=" control-label">Pickup Date:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" value="08/20/2018" />
+										</div>
+									</div>
+									
+									<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class=" control-label">Ready :</label>
+											<div class="">
+												<input type="text" class="form-control" name="username" value="2.00 PM  "  />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+									<div class="form-group">
+											<label class=" control-label">&nbsp;</label>
+											<div class="">
+												<input type="text" class="form-control" name="username" value="12.00 AM  " />
+											</div>
+										</div>
+								
+										
+									</div>	
+									</div>	
+									
+									
+									
+									<div class="clearfix">&nbsp;</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-md-6">
+							
+								<div class="box1 " >
+									<br>
+									<div class="form-group">
+										<label class=" control-label">Estimated Delivery Date:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" value="08/20/2018" />
+										</div>
+									</div>
+										<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label class=" control-label">Estimated Delivery Time :</label>
+											<div class="">
+												<input type="text" class="form-control" name="username" value="2.00 PM  "  />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+									<div class="form-group">
+											<label class=" control-label">&nbsp;</label>
+											<div class="">
+												<input type="text" class="form-control" name="username" value="12.00 AM  " />
+											</div>
+										</div>
+								
+										
+									</div>	
+									</div>	
+									
+									<div class="clearfix">&nbsp;</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+							
+								<div class="box1 " >
+									<div class="box-header with-border">
+									  <h3 class="box-title">Payer Information</h3>
+									</div>
+									<div class="row">
+									<div class="form-group col-md-6 col-md-offset-3">
+										<label class=" control-label">Select</label>
+										<div class="">
+											<select class="form-control">
+													<option> Select</option>
+												<option> Full Access</option>
+												<option> Old</option>
+											</select>
+										</div>
+									</div>
+									</div>
+									<hr>
+									<div class="row">
+										<div class="col-md-6 col-md-offset-3">
+										<table class="table ">
+											<tr>
+												<th>Credit Limit </th>
+												<th>- </th>
+												<th>Booked </th>
+												<th>= </th>
+												<th> Available Credit </th>
+											</tr>
+											<tr>
+												<th>$0.00 </th>
+												<th>- </th>
+												<th>$0.00 </th>
+												<th>= </th>
+												<th>  $0.00</th>
+											</tr>
+										</table>
+										</div>
+									</div>
+									<div class="clearfix">&nbsp;</div>
+								</div>
+							</div>
+							
+							<div class="col-md-4">
+								<div class="box1 " >
+									<div class="box-header with-border">
+									  <h3 class="box-title">Shipper Information</h3>
+									</div>
+									<br>
+									<div class="form-group">
+										<label class=" control-label">Company :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Company " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Street:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Street" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Zip :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Zip" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Contact :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Contact  " />
+										</div>
+									</div>
+										<div class="form-group">
+											<label class=" control-label">Email :</label>
+											<div class="">
+												<input type="email" class="form-control" name="username" placeholder="Enter Email   " />
+											</div>
+										</div>	
+									<div class="form-group">
+										<label class=" control-label">Phone :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Phone  " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Fax :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Fax  " />
+										</div>
+									</div>	
+									<div class="form-group">
+										<label class=" control-label">Public :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Public  " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Notes:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Notes " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Private Notes:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Private Notes " />
+										</div>
+									</div>
+                            </div>
+							<div class="clearfix">&nbsp;</div>
+						</div>
+						<div class="col-md-4">
+								<div class="box1 " >
+									<div class="box-header with-border">
+									  <h3 class="box-title">Consignee Information</h3>
+									</div>
+									<br>
+									<div class="form-group">
+										<label class=" control-label">Company :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Company " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Street:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Street" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Zip :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Zip" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Contact :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Contact  " />
+										</div>
+									</div>
+										<div class="form-group">
+											<label class=" control-label">Email :</label>
+											<div class="">
+												<input type="email" class="form-control" name="username" placeholder="Enter Email   " />
+											</div>
+										</div>	
+									<div class="form-group">
+										<label class=" control-label">Phone :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Phone  " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Fax :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Fax  " />
+										</div>
+									</div>	
+									<div class="form-group">
+										<label class=" control-label">Public :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Public  " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Notes:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Notes " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Private Notes:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Private Notes " />
+										</div>
+									</div>
+                            </div>
+							<div class="clearfix">&nbsp;</div>
+						</div>
+						<div class="col-md-4">
+								<div class="box1 " >
+									<div class="box-header with-border">
+									  <h3 class="box-title">Shipment Information</h3>
+									</div>
+									<br>
+									<div class="form-group">
+										<label class=" control-label">Mode :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Mode " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Equipment:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Equipment" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Priority :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Priority" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Customer Contact :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Customer Contact  " />
+										</div>
+									</div>
+										<div class="form-group">
+											<label class=" control-label">Shipper Number :</label>
+											<div class="">
+												<input type="text" class="form-control" name="username" placeholder="Enter Shipper Number   " />
+											</div>
+										</div>	
+										<div class="form-group">
+											<label class=" control-label">PO Reference :</label>
+											<div class="">
+												<input type="text" class="form-control" name="username" placeholder="Enter PO Reference  " />
+											</div>
+										</div>	
+										<div class="form-group">
+											<label class=" control-label">Pro No:</label>
+											<div class="">
+												<input type="text" class="form-control" name="username" placeholder="Enter PO Reference  " />
+											</div>
+										</div>	
+									<div class="form-group">
+										<div class="checkbox">
+										  <label><input type="checkbox" value="">Value not Specified</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Shipment Value :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Fax  " />
+										</div>
+									</div>	
+									<div class="form-group">
+										<label class=" control-label">Value Per Pound :</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Public  " />
+										</div>
+									</div>
+									<div class="form-group">
+										<label class=" control-label">Miles:</label>
+										<div class="">
+											<input type="text" class="form-control" name="username" placeholder="Enter Notes " />
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="checkbox">
+										  <label><input type="checkbox" value="">SANTRAX</label>
+										</div>
+									</div>
+                            </div>
+							<div class="clearfix">&nbsp;</div>
+						</div>
+							</div>
+	<div class="row">
+		<div class="col-md-12 ">
+          <div class="box box-solid">
+            <div class="box-header with-border bg-default  text-center">
+				<h3 class="box-title ">Commodity Information</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive">
+				<table class="table table-bordered" Width="100%">
+					<tr>
+						<th>S.no</th>
+						<th>Pieces</th>
+						<th>Package</th>
+						<th>Product Description</th>
+						<th>NMFC#</th> 
+						<th colspan="4" class="text-center">Dimensions</th>
+						<th>PCF</th>
+						<th>HZ</th>
+						<th>Class</th>
+						<th colspan="2" class="text-center">Weight</th>
+						<th  class="text-center">Add</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Select</option>
+								<option>Bags</option>
+							</section>
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<table>
+							<tr>
+								<td>L:</td>
+								<td><input type="text" class="form-control"></td>
+							</tr>
+							</table>
+						</td>
+						<td>
+							<table>
+							<tr>
+								<td>W:</td>
+								<td><input type="text" class="form-control"></td>
+							</tr>
+							</table>
+						</td>
+						<td>
+							<table>
+							<tr>
+								<td>H:</td>
+								<td><input type="text" class="form-control"></td>
+							</tr>
+							</table>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Select</option>
+								<option>In</option>
+								<option>Cm</option>
+							</section>
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Select</option>
+								<option>Class1</option>
+								<option>class 2</option>
+							</section>
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Select</option>
+								<option>Ib</option>
+								<option>Grms</option>
+							</section>
+						</td>
+						<td><button class="btn btn-primary btn-sm">ADD Row</button></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Select</option>
+								<option>Bags</option>
+							</section>
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<table>
+							<tr>
+								<td>L:</td>
+								<td><input type="text" class="form-control"></td>
+							</tr>
+							</table>
+						</td>
+						<td>
+							<table>
+							<tr>
+								<td>W:</td>
+								<td><input type="text" class="form-control"></td>
+							</tr>
+							</table>
+						</td>
+						<td>
+							<table>
+							<tr>
+								<td>H:</td>
+								<td><input type="text" class="form-control"></td>
+							</tr>
+							</table>
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Select</option>
+								<option>In</option>
+								<option>Cm</option>
+							</section>
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Select</option>
+								<option>Class1</option>
+								<option>class 2</option>
+							</section>
+						</td>
+						<td>
+							<input type="text" class="form-control">
+						</td>
+						<td>
+							<select class="form-control">
+								<option>Select</option>
+								<option>Ib</option>
+								<option>Grms</option>
+							</section>
+						</td>
+						<td><button class="btn btn-primary btn-sm">ADD Row</button></td>
+					</tr>
+					<tfoot>
+						<tr>
+						<th >&nbsp;</th>
+						<th><input type="text" class="form-control"></th>
+						<th colspan="3" class="vertical-center">:Total Pieces</th>
+						<th colspan="2">Total Linear F:</th>
+						<th colspan="2">
+							<input type="text" class="form-control">
+						</th>
+						<th colspan="2">Total Wt:</th> 
+						<th colspan="4" >
+							<input type="text" class="form-control">
+						</th>
+					</tr>
+					</tfoot>
+				</table>
+				
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+	  </div>
+	    <div class="row">
+		<div class="col-md-5 ">
+          <div class="box box-solid">
+            <div class="box-header with-border bg-default text-center ">
+              
+
+              <h3 class="box-title ">Pallet Information</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Palletized</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Stackable</label>
+							</div>
+						</div>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="col-md-6">
+						<label class="col-md-5">#Pallets</label>
+						<div class="col-md-7"><input type="text" class="form-control"></div>
+					</div>
+					<div class="col-md-6">
+						<label class="col-md-5">Stackable</label>
+						<div class="col-md-7"><input type="text" class="form-control"></div>
+					</div>
+					
+				</div>
+				
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+		<div class="col-md-7 ">
+          <div class="box box-solid">
+            <div class="box-header with-border bg-default ">
+              
+
+              <h3 class="box-title text-center">Bill of Lading Instructions</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+				 <textarea class="form-control" rows="5" id="comment"></textarea>
+				
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+	  </div>
+	   <div class="row">
+		<div class="col-md-12 ">
+          <div class="box box-solid">
+            <div class="box-header with-border bg-default text-center ">
+              
+
+              <h3 class="box-title ">Supplemental Charges</h3>
+			  <div class=" col-md-5 pull-right" >
+				<div class="row" >
+				<div class="col-md-10">
+					<select class="form-control">
+						<option>Accessorials</option>
+						<option>Accessorials</option>
+						<option>Accessorials</option>
+						<option>Accessorials</option>
+					</select>
+					
+				</div>
+				<div class="col-md-2">
+					<button class="btn btn-primary btn-small">Add</button>
+				</div>
+				</div>
+			  </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Chassis Rental</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Port Fee</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Reefer Charge </label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Tri-Axle Chassis </label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Fuel Surcharge</label>
+							</div>
+						</div>
+					</div>
+					
+				</div>	
+				
+				
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+	
+	  </div>
+	   <div class="row">
+		<div class="col-md-12 ">
+          <div class="box box-solid">
+            <div class="box-header with-border bg-default text-center ">
+              
+
+              <h3 class="box-title ">XML Accessorial Charges</h3>
+			 
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Call Before Delivery</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Inside Pickup</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Protect From Freezing </label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Storage Facility Delivery </label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Delivery Appointment</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Lift Gate Pickup</label>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Residential Delivery</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Storage Facility pickup</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Excessive Length</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Lift Gate Delivery</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Residential Pickup</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Trade Show Delivery</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Hazardous Materials Charge</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Limited Access Delivery</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Single Shipment</label>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="form-group">
+							<div class="checkbox">
+							  <label><input type="checkbox" value="">Trade Show Pickup</label>
+							</div>
+						</div>
+					</div>
+					
+				</div>	
+				
+				
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+	
+	  </div>
+								
+							
+							</div>
+						
+						
+					
+						
+						
+                    </form>
+					
+          </div>
+		  <div class="clearfix">&nbsp;</div>
+          </div>
+          <!-- /.box -->
+
+         <div class="clearfix">&nbsp;</div>
+
+        </div>
+		
+      
+        </div>
+		
+      
+      <!-- /.row -->
+    </section> 
+	
+</div>
+ <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+     
+    </div>
+    <strong>Copyright &copy; 2018 <a href="#">Logistics</a>.</strong> All rights
+    reserved.
+  </footer>
+
+
+  <div class="control-sidebar-bg"></div>
+</div>
+
+<!-- AdminLTE App -->
+
+
+
+</body>
+</html>
