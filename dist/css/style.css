@@ -233,14 +233,21 @@ select.form-control {
 }
 
 input[type="password"]:focus,
-select.form-control:focus {
+select.form-control:focus,{
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
+.note-area textarea{
+    border:none;
+    border-bottom:1px solid #ddd;
+}
 
+.note-area textarea.form-control:focus{
+    border-color: #3c8dbc;
+}
 .box1 {
-	    position: relative;
+    position: relative;
     border-radius: 3px;
     background: #ffffff;
 	padding:2px 15px;
