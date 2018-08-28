@@ -21,8 +21,8 @@
   display: none;
 }
 .chiller_cb input:checked ~ span {
-  background: #fd2727;
-  border-color: #fd2727;
+  background: #3c8dbc;
+  border-color: #3c8dbc;
 }
 .chiller_cb input:checked ~ span:before {
   width: 1rem;
@@ -261,4 +261,8 @@ select.form-control:focus,{
 .vertical-center{
 	vertical-align :middle !important;
 	
+}
+
+.table>.tb-data-border>tr>td{
+    border-top: 1px solid white;
 }
