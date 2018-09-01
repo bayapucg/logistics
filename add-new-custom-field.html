@@ -7,7 +7,7 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.7 -->
-        <link rel="stylesheet" href="dist/css/bootstrap.min.css">        
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
         <!-- Ionicons -->
@@ -227,113 +227,138 @@
                         <div class="col-md-12">
                             <!-- general form elements -->
                             <div class="box box-primary">
-                                <div class="box-header with-border">
-                                    <h3 class="box-title">Address Book</h3>
+                                <div class="box-header with-border bg-default text-center">
+                                    <h3 class="">Custom Fields / Pages</h3>
                                 </div>
                                 <!-- /.box-header -->
                                 <!-- form start -->
                                 <div style="padding:20px;">
                                     <form id="defaultForm" method="post" class="" >
                                         <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="box1 " >
-                                                    <div class="box-header with-border">
-                                                       <h3 class="box-title">Address Information</h3>
+                                            <div class="col-md-12">
+                                                <div class="" >
+                                                    <div class="box-header with-border bg-default">
+                                                       <h3 class="box-title">Add Custom Field</h3>
                                                     </div>
                                                     <br>
+                                                    <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label class=" control-label">Company Name:</label>
+                                                        <label class=" control-label">Field Name :</label>
                                                         <div class="">
-                                                            <input type="text" class="form-control" name="username" placeholder="Enter Company Name"  />
+                                                            <input type="text" class="form-control" name="username" placeholder="Seal"  />
                                                         </div>
                                                     </div>
+                                                    </div>
+                                                    <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label class=" control-label">Address 1 :</label>
+                                                        <label class=" control-label">Default Value :</label>
                                                         <div class="">
-                                                            <input type="text" class="form-control" name="username" placeholder="EnterAddress 1 "  />
+                                                            <input type="text" class="form-control" name="username" value=""  />
                                                         </div>
                                                     </div>
+                                                    </div>
+                                                    <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label class=" control-label">Address 2 :</label>
+                                                        <label class=" control-label">No.of Lines :</label>
                                                         <div class="">
-                                                            <input type="text" class="form-control" name="username" placeholder="EnterAddress 2 "  />
+                                                            <input type="text" class="form-control" name="username" value=""  />
                                                         </div>
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <label class=" control-label">Zip</label>
-                                                                <div class="">
-                                                                    <input type="text" class="form-control" name="username" value="94621"  />
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                           <div class="form-group">
-                                                                <label class=" control-label">&nbsp;</label>
-                                                                <div class="">
-                                                                    <button class="btn btn-primary btn-xs">Find Zip</button>
-                                                                    <button class="btn btn-warning btn-xs">Map</button>
-                                                                </div>
-                                                            </div>
-                                                        </div>	
-                                                        <div class="col-md-2"></div>
-
-                                                    </div>	
+                                                    </div>
+                                                    <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class=" control-label">Phone :</label>
+                                                        <label class=" control-label">Field type :</label>
                                                         <div class="">
-                                                            <input type="text" class="form-control" name="username" value="8500226782"  />
+                                                            <select class="form-control">
+                                                                <option>Text Box</option>
+                                                                <option>Text Box</option>
+                                                            </select>
                                                         </div>
                                                     </div>
+                                                    </div>
+                                                    <div class="col-md-6">
                                                     <div class="form-group">
-                                                        <label class=" control-label">Fax :</label>
+                                                        <label class=" control-label">Page Type :</label>
                                                         <div class="">
-                                                            <input type="text" class="form-control" name="username" value="8500226782"  />
+                                                            <select class="form-control">
+                                                                <option>Load</option>
+                                                                <option>Load</option>
+                                                            </select>
                                                         </div>
                                                     </div>
+                                                    </div>
+                                                    <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label class=" control-label">Contact :</label>
-                                                        <div class="">
-                                                            <input type="text" class="form-control" name="username" value="8500050944"  />
+                                                        <label class=" control-label">Print On Invoice :</label>
+                                                        <div class="chiller_cb">
+                                                            <input id="myCheckbox25" type="checkbox">
+                                                            <label for="myCheckbox26">&nbsp;</label>
+                                                            <span></span>
                                                         </div>
                                                     </div>
+                                                    </div>
+                                                    <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label class=" control-label">Email :</label>
-                                                        <div class="">
-                                                            <input type="email" class="form-control" name="username" value="abc@gmail.com"/>
+                                                        <label class=" control-label">Print On BOL :</label>
+                                                        <div class="chiller_cb">
+                                                            <input id="myCheckbox26" type="checkbox">
+                                                            <label for="myCheckbox26">&nbsp;</label>
+                                                            <span></span>
                                                         </div>
                                                     </div>
+                                                    </div>
+                                                    <div class="col-md-4">
                                                     <div class="form-group">
-                                                        <label class=" control-label">Notes :</label>
-                                                        <div class="">
-                                                            <textarea style="border:none;border-bottom:1px solid #ddd" type="text" class="form-control" name="username" value="abc@gmail.com"></textarea>
+                                                        <label class=" control-label">Accessible by Customer :</label>
+                                                        <div class="chiller_cb">
+                                                            <input id="myCheckbox27" type="checkbox">
+                                                            <label for="myCheckbox27">&nbsp;</label>
+                                                            <span></span>
                                                         </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class=" control-label">Is Searchable :</label>
+                                                        <div class="chiller_cb">
+                                                            <input id="myCheckbox28" type="checkbox">
+                                                            <label for="myCheckbox28">&nbsp;</label>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class=" control-label">Is Field Active :</label>
+                                                        <div class="chiller_cb">
+                                                            <input id="myCheckbox29" type="checkbox">
+                                                            <label for="myCheckbox29">&nbsp;</label>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                    <div class="form-group">
+                                                        <label class=" control-label">Always Show :</label>
+                                                        <div class="chiller_cb">
+                                                            <input id="myCheckbox30" type="checkbox">
+                                                            <label for="myCheckbox30">&nbsp;</label>
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
                                                     </div>
                                                     <div class="clearfix">&nbsp;</div>
                                                 </div>
                                              </div>
-                                            <div class="col-md-6">
-                                                <div class="box1 " >
-                                                    <div class="box-header with-border">
-                                                        <h3 class="box-title">Existing Address</h3>
-                                                    </div>
-                                                    <br>
-                                                    <p>This section checks to see if the address being created already exists</p>
-                                                    <div class="clearfix">&nbsp;</div>
-                                                </div>
+                                            <div class="col-md-12 text-center">
+                                                <button  class="btn btn-primary btn-small">Save Changes </button>
+                                                <button  class="btn btn-primary btn-small">Delete </button>
                                             </div>
-                                            <div class="col-md-12">
-                                                <button  class="btn btn-primary btn-small">Save Information </button>
-                                                <button  class="btn btn-primary btn-small">Save  Add Another </button>
-                                                <button  class="btn btn-primary btn-small">Address Book </button>
-                                        </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="clearfix">&nbsp;</div>
                     </div>
                     <!-- /.box -->
                     <div class="clearfix">&nbsp;</div>
@@ -350,4 +375,3 @@
         </div>
     </body>
 </html>
-		

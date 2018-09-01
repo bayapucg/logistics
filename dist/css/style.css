@@ -191,6 +191,9 @@ p{
 .help-li .col-md-3{
 	padding:8px 0px;
 }
+.help-li .col-md-4{
+	padding:8px 0px;
+}
 input[type="text"],
 select.form-control {
   background: transparent;
