@@ -264,20 +264,26 @@
                             <div class="col-md-12">
                                 <form id="" method="post" class="" >
                                     <div class="box box-solid">
-                                        <div class="box-header with-border text-center">
+                                        <div class="box-header with-border">
                                             <h2 class="box-title">Supplemental Charge</h2>
                                         </div>
                                         <!-- /.box-header -->
                                         <div class="col-md-1"></div>
                                         <div class="box-body">
                                             <div class="row" style="padding: 20px;">
-                                                <div class="col-md-12">
+                                                <div class="col-md-6">
                                                     <div class="form-group">
                                                         <p><b>Description :</b></p>
                                                         <div class="">
-                                                            <select class="form-control">
-                                                                <option> Accessorials</option>
-                                                            </select>
+                                                            <input type="text" class="form-control" id="" value="Accessorials"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <p><b>Sales Code :</b></p>
+                                                        <div class="">
+                                                            <input type="text" class="form-control" id="" value="TRANS"/>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -315,28 +321,82 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </div>	
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <small>Display :</small>
-                                                        <div class="">
-                                                             <select class="form-control">
-                                                                <option>Not Set</option>
-                                                             </select>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <small>Display :</small>
+                                                                <div class="">
+                                                                     <select class="form-control">
+                                                                        <option>Not Set</option>
+                                                                     </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>	
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <small>Type :</small>
+                                                                <select class="form-control">
+                                                                    <option>Not Set</option>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>	
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <small>Type :</small>
-                                                        <select class="form-control">
-                                                            <option>Not Set</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
                                                 <div class="clearfix">&nbsp;</div>
                                                 <div class="col-md-12">
+                                                    <p><b>Cost :</b></p>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <small>Amount (in &dollar;) :</small>
+                                                                <div class="">
+                                                                     <select class="form-control">
+                                                                        <option>Current</option>
+                                                                     </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <small>Minimum (in &dollar;) :</small>
+                                                                <div class="">
+                                                                     <select class="form-control">
+                                                                        <option>Current</option>
+                                                                     </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <small>Maximum (in &dollar;) :</small>
+                                                                <div class="">
+                                                                     <select class="form-control">
+                                                                        <option>Current</option>
+                                                                     </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <small>Display :</small>
+                                                                <div class="">
+                                                                     <select class="form-control">
+                                                                        <option>Not Set</option>
+                                                                     </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>	
+                                                        <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                <small>Type :</small>
+                                                                <select class="form-control">
+                                                                    <option>Not Set</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>	
+                                                <div class="clearfix">&nbsp;</div>
+                                                <div class="col-md-8">
                                                     <div class="form-group">
                                                         <p><b>Notes :</b></p>
                                                         <div class="note-area">
@@ -344,10 +404,31 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p>Active</p>
+                                                            <div class="chiller_cb">
+                                                                <input id="myCbox1" type="checkbox" >
+                                                                <label for="myCbox1">&nbsp;</label>
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>Manager Use Only</p>
+                                                            <div class="chiller_cb">
+                                                                <input id="myCbox2" type="checkbox" >
+                                                                <label for="myCbox2">&nbsp;</label>
+                                                                <span></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="col-md-12 text-center">
-                                                <button type="submit" class="btn btn-primary btn-xl">Save </button>
-                                                <button type="submit" class="btn btn-warning btn-xl">View List </button>
-                                            </div>
+                                                    <button type="submit" class="btn btn-primary btn-xl">Save </button>&nbsp;
+                                                    <button type="submit" class="btn btn-warning btn-xl">View List </button>&nbsp;
+                                                    <button type="submit" class="btn btn-primary btn-xl">View Schedules </button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-md-1"></div>
